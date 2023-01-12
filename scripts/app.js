@@ -122,3 +122,15 @@ deleteKey.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+
+/////animations
+gsap.from('.numBtn', {duration: 1.3, x: '-1000%', stagger: .1, ease: 'slow(0.3, 0.4, false)'})
+gsap.from('.opBtn', {duration: 1.3, x: '1000%', stagger: .1, ease: 'slow(0.3, 0.4, false)'})
+gsap.from('.runBtn', {duration: 1.3, x: '1000%', ease: 'slow(0.3, 0.4, false)'})
+gsap.from('#editBtn', {duration: 1.3, y: '1000%', ease: 'slow(0.3, 0.4, false)'})
+gsap.from('.calc-display', {duration: 1.3, y: '-1000%', ease: 'slow(0.3, 0.4, false)'})
+gsap.from('.footer-line', {duration: 1.3, delay: 2, opacity: 0})
+gsap.from('.calculator', {duration: 1.3, delay: 1, opacity: 0, height: 0, ease: 'slow(0.3, 0.4, false)'})
+
+
